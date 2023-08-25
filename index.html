@@ -78,7 +78,8 @@
         </div>
 
 
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white
+">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="assets/images/image 8.png" alt="loge" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -87,21 +88,22 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0" id="myul">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Our service</a>
+                            <a class="nav-link" data-scroll="servers" href="#servers">Our service</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Frequently asked questions</a>
+                            <a class="nav-link" data-scroll="Frequentlyaskedquestions"
+                                href="#Frequentlyaskedquestions">Frequently asked questions</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Projects</a>
+                            <a class="nav-link" data-scroll="Projects" href="#Projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Testimonials</a>
+                            <a class="nav-link" data-scroll="Testimonials" href="#Testimonials">Testimonials</a>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -111,8 +113,8 @@
             </div>
         </nav>
 
-        <section class="hero my-5">
-            <div class="container-fluid mt-5">
+        <section class="hero mb-5">
+            <div class="container-fluid mt-5 p-0">
                 <div class="row">
                     <div class="col-12">
                         <img src="assets/images/Untitled11.png" class="w-100 d-none d-md-block" />
@@ -147,7 +149,7 @@
             </div>
 
         </section>
-        <section class="servers my-5">
+        <section class="servers my-5" id="servers">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12">
@@ -358,8 +360,8 @@
 
         </section>
 
-        <section class="accordionsection my-5">
-            <div class="container p-0">
+        <section class="accordionsection my-5" id="Frequentlyaskedquestions">
+            <div class="container ">
                 <div class="row">
                     <div class="col-lg-5">
                         <div class="row">
@@ -371,7 +373,7 @@
                         <div class="row bg justify-content-center mt-4">
                             <div class="col-12">
                                 <div class="row justify-content-center">
-                                    <div class="col-10 col-lg-5 text-center" style="position: relative;">
+                                    <div class="col-10 col-lg-8 text-center" style="position: relative;">
                                         <img src="assets/images/Avatar.png" alt=".." />
                                         <img src="assets/images/Avatar (1).png" alt=".." />
                                         <img src="assets/images/Avatar (2).png" alt=".." />
@@ -509,7 +511,7 @@
         </section>
 
 
-        <section class="projects my-5">
+        <section class="projects my-5" id="Projects">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -546,7 +548,7 @@
 
 
                                         <div class="card-body">
-                                            <p class="card-text">Web Development
+                                            <p class="card-text text-center">Web Development
                                                 Projects</p>
                                         </div>
                                     </div>
@@ -575,7 +577,7 @@
                                         </svg>
 
                                         <div class="card-body">
-                                            <p class="card-text">App Development
+                                            <p class="card-text text-center">App Development
                                                 Projects</p>
                                         </div>
                                     </div>
@@ -592,7 +594,7 @@
                                         </svg>
 
                                         <div class="card-body">
-                                            <p class="card-text">UI/UX Design
+                                            <p class="card-text text-center">UI/UX Design
                                                 Projects</p>
                                         </div>
                                     </div>
@@ -610,7 +612,41 @@
 
 
                                         <div class="card-body">
-                                            <p class="card-text">Graphic Design
+                                            <p class="card-text text-center">Graphic Design
+                                                Projects</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card justify-content-center align-items-center">
+                                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                                        <svg width="86" height="87" viewBox="0 0 86 87" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" width="85" height="87" rx="40" fill="#FDF7FF" />
+                                            <path
+                                                d="M63.2126 27.1061H62.7844C62.7975 27.0929 65.5336 24.3675 65.5459 24.3534C67.5149 22.305 67.492 19.0524 65.4724 17.0329C63.3982 14.9587 60.0865 15.0355 58.1255 16.9846L48.0391 27.1061H22.7881C20.1397 27.1061 17.9854 29.2604 17.9854 31.9088V55.1373C17.9854 57.7857 20.1397 59.94 22.7881 59.94H37.1852L36.5593 68.2059H33.7659C32.8568 68.2059 32.1189 68.9438 32.1189 69.853C32.1189 70.7621 32.8568 71.5 33.7659 71.5H52.2345C53.1437 71.5 53.8816 70.7621 53.8816 69.853C53.8816 68.9438 53.1437 68.2059 52.2345 68.2059H49.4411L48.8152 59.94H63.2124C65.8607 59.94 68.0151 57.7857 68.0151 55.1373V31.9089C68.0153 29.2604 65.8611 27.1061 63.2126 27.1061ZM64.7213 55.1374C64.7213 55.9697 64.0449 56.646 63.2126 56.646H22.788C21.9556 56.646 21.2792 55.9696 21.2792 55.1374V31.9089C21.2792 31.0766 21.9556 30.4002 22.788 30.4002H44.7561L40.9647 34.2048C38.5415 33.9436 36.0595 34.7363 34.2151 36.582C31.6554 39.1396 30.3839 47.2194 30.0065 50.6827C29.8927 51.7324 30.7831 52.6133 31.8226 52.4977C35.3865 52.1101 43.3781 50.8437 45.9233 48.2901C47.7496 46.4636 48.5648 43.9914 48.3006 41.5406L59.4795 30.4001H63.2127C64.045 30.4001 64.7214 31.0765 64.7214 31.9088L64.7213 55.1374ZM46.1373 68.206H39.8632L40.4891 59.9401H45.5114L46.1373 68.206ZM60.4446 19.3245C61.2 18.6108 62.4068 18.6261 63.1423 19.3618C63.8791 20.0986 63.8945 21.3052 63.1808 22.0608C52.4778 32.7265 63.3206 21.9215 47.1102 38.0765C46.4545 37.0204 45.532 36.0778 44.4289 35.3952C52.1527 27.6439 45.1735 34.6474 60.4446 19.3245ZM33.5541 48.9511C33.8807 46.7771 35.0081 40.446 36.544 38.9109C38.4854 36.9671 41.6427 36.9592 43.5944 38.9109C45.5419 40.8581 45.533 44.0226 43.5944 45.9613C42.0523 47.5034 35.7125 48.6281 33.5541 48.9511Z"
+                                                fill="#351B6B" />
+                                        </svg>
+
+                                        <div class="card-body">
+                                            <p class="card-text text-center">Graphic Design
+                                                Projects</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card justify-content-center align-items-center">
+                                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                                        <svg width="86" height="87" viewBox="0 0 86 87" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" width="85" height="87" rx="40" fill="#FDF7FF" />
+                                            <path
+                                                d="M63.2126 27.1061H62.7844C62.7975 27.0929 65.5336 24.3675 65.5459 24.3534C67.5149 22.305 67.492 19.0524 65.4724 17.0329C63.3982 14.9587 60.0865 15.0355 58.1255 16.9846L48.0391 27.1061H22.7881C20.1397 27.1061 17.9854 29.2604 17.9854 31.9088V55.1373C17.9854 57.7857 20.1397 59.94 22.7881 59.94H37.1852L36.5593 68.2059H33.7659C32.8568 68.2059 32.1189 68.9438 32.1189 69.853C32.1189 70.7621 32.8568 71.5 33.7659 71.5H52.2345C53.1437 71.5 53.8816 70.7621 53.8816 69.853C53.8816 68.9438 53.1437 68.2059 52.2345 68.2059H49.4411L48.8152 59.94H63.2124C65.8607 59.94 68.0151 57.7857 68.0151 55.1373V31.9089C68.0153 29.2604 65.8611 27.1061 63.2126 27.1061ZM64.7213 55.1374C64.7213 55.9697 64.0449 56.646 63.2126 56.646H22.788C21.9556 56.646 21.2792 55.9696 21.2792 55.1374V31.9089C21.2792 31.0766 21.9556 30.4002 22.788 30.4002H44.7561L40.9647 34.2048C38.5415 33.9436 36.0595 34.7363 34.2151 36.582C31.6554 39.1396 30.3839 47.2194 30.0065 50.6827C29.8927 51.7324 30.7831 52.6133 31.8226 52.4977C35.3865 52.1101 43.3781 50.8437 45.9233 48.2901C47.7496 46.4636 48.5648 43.9914 48.3006 41.5406L59.4795 30.4001H63.2127C64.045 30.4001 64.7214 31.0765 64.7214 31.9088L64.7213 55.1374ZM46.1373 68.206H39.8632L40.4891 59.9401H45.5114L46.1373 68.206ZM60.4446 19.3245C61.2 18.6108 62.4068 18.6261 63.1423 19.3618C63.8791 20.0986 63.8945 21.3052 63.1808 22.0608C52.4778 32.7265 63.3206 21.9215 47.1102 38.0765C46.4545 37.0204 45.532 36.0778 44.4289 35.3952C52.1527 27.6439 45.1735 34.6474 60.4446 19.3245ZM33.5541 48.9511C33.8807 46.7771 35.0081 40.446 36.544 38.9109C38.4854 36.9671 41.6427 36.9592 43.5944 38.9109C45.5419 40.8581 45.533 44.0226 43.5944 45.9613C42.0523 47.5034 35.7125 48.6281 33.5541 48.9511Z"
+                                                fill="#351B6B" />
+                                        </svg>
+
+                                        <div class="card-body">
+                                            <p class="card-text text-center">Graphic Design
                                                 Projects</p>
                                         </div>
                                     </div>
@@ -626,36 +662,34 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card justify-content-center align-items-center">
-                                        <img src="..." class="card-img-top" alt="...">
+                                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                                        <svg width="86" height="87" viewBox="0 0 86 87" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" width="85" height="87" rx="40" fill="#FDF7FF" />
+                                            <path
+                                                d="M63.2126 27.1061H62.7844C62.7975 27.0929 65.5336 24.3675 65.5459 24.3534C67.5149 22.305 67.492 19.0524 65.4724 17.0329C63.3982 14.9587 60.0865 15.0355 58.1255 16.9846L48.0391 27.1061H22.7881C20.1397 27.1061 17.9854 29.2604 17.9854 31.9088V55.1373C17.9854 57.7857 20.1397 59.94 22.7881 59.94H37.1852L36.5593 68.2059H33.7659C32.8568 68.2059 32.1189 68.9438 32.1189 69.853C32.1189 70.7621 32.8568 71.5 33.7659 71.5H52.2345C53.1437 71.5 53.8816 70.7621 53.8816 69.853C53.8816 68.9438 53.1437 68.2059 52.2345 68.2059H49.4411L48.8152 59.94H63.2124C65.8607 59.94 68.0151 57.7857 68.0151 55.1373V31.9089C68.0153 29.2604 65.8611 27.1061 63.2126 27.1061ZM64.7213 55.1374C64.7213 55.9697 64.0449 56.646 63.2126 56.646H22.788C21.9556 56.646 21.2792 55.9696 21.2792 55.1374V31.9089C21.2792 31.0766 21.9556 30.4002 22.788 30.4002H44.7561L40.9647 34.2048C38.5415 33.9436 36.0595 34.7363 34.2151 36.582C31.6554 39.1396 30.3839 47.2194 30.0065 50.6827C29.8927 51.7324 30.7831 52.6133 31.8226 52.4977C35.3865 52.1101 43.3781 50.8437 45.9233 48.2901C47.7496 46.4636 48.5648 43.9914 48.3006 41.5406L59.4795 30.4001H63.2127C64.045 30.4001 64.7214 31.0765 64.7214 31.9088L64.7213 55.1374ZM46.1373 68.206H39.8632L40.4891 59.9401H45.5114L46.1373 68.206ZM60.4446 19.3245C61.2 18.6108 62.4068 18.6261 63.1423 19.3618C63.8791 20.0986 63.8945 21.3052 63.1808 22.0608C52.4778 32.7265 63.3206 21.9215 47.1102 38.0765C46.4545 37.0204 45.532 36.0778 44.4289 35.3952C52.1527 27.6439 45.1735 34.6474 60.4446 19.3245ZM33.5541 48.9511C33.8807 46.7771 35.0081 40.446 36.544 38.9109C38.4854 36.9671 41.6427 36.9592 43.5944 38.9109C45.5419 40.8581 45.533 44.0226 43.5944 45.9613C42.0523 47.5034 35.7125 48.6281 33.5541 48.9511Z"
+                                                fill="#351B6B" />
+                                        </svg>
+
                                         <div class="card-body">
-                                            <p class="card-text">Graphic Design
+                                            <p class="card-text text-center">Graphic Design
                                                 Projects</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card justify-content-center align-items-center">
-                                        <img src="..." class="card-img-top" alt="...">
+                                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                                        <svg width="86" height="87" viewBox="0 0 86 87" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" width="85" height="87" rx="40" fill="#FDF7FF" />
+                                            <path
+                                                d="M63.2126 27.1061H62.7844C62.7975 27.0929 65.5336 24.3675 65.5459 24.3534C67.5149 22.305 67.492 19.0524 65.4724 17.0329C63.3982 14.9587 60.0865 15.0355 58.1255 16.9846L48.0391 27.1061H22.7881C20.1397 27.1061 17.9854 29.2604 17.9854 31.9088V55.1373C17.9854 57.7857 20.1397 59.94 22.7881 59.94H37.1852L36.5593 68.2059H33.7659C32.8568 68.2059 32.1189 68.9438 32.1189 69.853C32.1189 70.7621 32.8568 71.5 33.7659 71.5H52.2345C53.1437 71.5 53.8816 70.7621 53.8816 69.853C53.8816 68.9438 53.1437 68.2059 52.2345 68.2059H49.4411L48.8152 59.94H63.2124C65.8607 59.94 68.0151 57.7857 68.0151 55.1373V31.9089C68.0153 29.2604 65.8611 27.1061 63.2126 27.1061ZM64.7213 55.1374C64.7213 55.9697 64.0449 56.646 63.2126 56.646H22.788C21.9556 56.646 21.2792 55.9696 21.2792 55.1374V31.9089C21.2792 31.0766 21.9556 30.4002 22.788 30.4002H44.7561L40.9647 34.2048C38.5415 33.9436 36.0595 34.7363 34.2151 36.582C31.6554 39.1396 30.3839 47.2194 30.0065 50.6827C29.8927 51.7324 30.7831 52.6133 31.8226 52.4977C35.3865 52.1101 43.3781 50.8437 45.9233 48.2901C47.7496 46.4636 48.5648 43.9914 48.3006 41.5406L59.4795 30.4001H63.2127C64.045 30.4001 64.7214 31.0765 64.7214 31.9088L64.7213 55.1374ZM46.1373 68.206H39.8632L40.4891 59.9401H45.5114L46.1373 68.206ZM60.4446 19.3245C61.2 18.6108 62.4068 18.6261 63.1423 19.3618C63.8791 20.0986 63.8945 21.3052 63.1808 22.0608C52.4778 32.7265 63.3206 21.9215 47.1102 38.0765C46.4545 37.0204 45.532 36.0778 44.4289 35.3952C52.1527 27.6439 45.1735 34.6474 60.4446 19.3245ZM33.5541 48.9511C33.8807 46.7771 35.0081 40.446 36.544 38.9109C38.4854 36.9671 41.6427 36.9592 43.5944 38.9109C45.5419 40.8581 45.533 44.0226 43.5944 45.9613C42.0523 47.5034 35.7125 48.6281 33.5541 48.9511Z"
+                                                fill="#351B6B" />
+                                        </svg>
+
                                         <div class="card-body">
-                                            <p class="card-text">Graphic Design
-                                                Projects</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card justify-content-center align-items-center">
-                                        <img src="..." class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text">Graphic Design
-                                                Projects</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card justify-content-center align-items-center">
-                                        <img src="..." class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text">Graphic Design
+                                            <p class="card-text text-center">Graphic Design
                                                 Projects</p>
                                         </div>
                                     </div>
@@ -682,43 +716,44 @@
                     <div class="col-md-3 col-lg-3 ">
                         <img src="assets/images/image 8.png" alt=".." />
 
-                        <p class="mt-4">Lorem ipsum dolor sit amet consectetur. Mauris amet pretium diam eros vitae
+                        <p class="mt-4 pfooter">Lorem ipsum dolor sit amet consectetur. Mauris amet pretium diam eros
+                            vitae
                             quam. Aenean
                             velit.</p>
                     </div>
-                    <div class="col-md-3 col-lg-2">
+                    <div class="col-md-3 col-lg-auto">
                         <h5>Company</h5>
                         <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">How it works</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Projects</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact Us</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  ">About</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  ">How it works</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  ">Projects</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  ">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  ">Contact Us</a></li>
                         </ul>
                     </div>
 
-                    <div class="col-md-3 col-lg-2">
+                    <div class="col-md-3 col-lg-auto">
                         <h5>Lorem ipsum</h5>
                         <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">It solutions</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Projects</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms & Conditions</a>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  ">It solutions</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  ">Projects</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  ">Terms & Conditions</a>
                             </li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy Policy</a>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  ">Privacy Policy</a>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="col-md-3 col-lg-2">
+                    <div class="col-md-3 col-lg-auto">
                         <h5>Lorem ipsum</h5>
                         <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Lorem ipsum dolo</a>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  ">Lorem ipsum dolo</a>
                             </li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">venenatis turpis
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  ">venenatis turpis
                                     imperdiet</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">at dignissim. Posuere
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  ">at dignissim. Posuere
                                     at</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">nibh fringilla luctus
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  ">nibh fringilla luctus
                                     nibh</a></li>
                         </ul>
                     </div>
@@ -726,7 +761,7 @@
 
                 </div>
 
-                <div class="d-flex justify-content-between py-3 border-top footerbottom">
+                <div class="d-flex justify-content-between py-3 border-top border-dark footerbottom">
                     <p>© Copyright 2022, All Rights Reserved by Golancer</p>
                     <ul class="list-unstyled d-flex">
                         <li class="ms-3"><a class="link-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg"
@@ -771,6 +806,21 @@
 
 
     <script>
+
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 50) {
+                    $(".navbar").addClass('scrolled');
+                }
+                else {
+                    $(".navbar").removeClass('scrolled');
+                }
+
+            })
+        })
+
+
+
         var swiper = new Swiper(".mySwiper", {
             navigation: {
                 nextEl: ".swiper-button-next",
@@ -836,10 +886,25 @@
                 },
                 991: {
                     slidesPerView: 4,
-                    spaceBetween: 10
+                    spaceBetween: 20
                 }
             }
         });
+
+
+        var btnContainer = document.getElementById("myul");
+
+        // Get all buttons with class="btn" inside the container
+        var btns = btnContainer.getElementsByClassName("nav-link");
+
+        // Loop through the buttons and add the active class to the current/clicked button
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
 
 
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300;400;500;700&display=swap');
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -16,11 +16,25 @@ a {
 }
 
 
+
+
+
+.navbar-light.scrolled.fixed-top {
+    top: 0;
+    box-shadow: 5px 5px 5px rgb(102 99 99 / 22%)
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
     position: relative;
     color: rgba(0, 35, 91, 1) !important;
     /* border-bottom: 2px solid rgba(0, 35, 91, 1); */
     /* text-decoration: underline !important; */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #9A9A9A;
+    font-size: 16px;
 }
 
 .navbar-light .btn-outline-primary {
@@ -45,6 +59,7 @@ a {
 }
 
 .hero {
+    margin-top: 7rem;
     position: relative;
 }
 
@@ -145,6 +160,21 @@ a {
     padding: 0 55px;
 }
 
+.mySwiper2 {
+    padding: 0 100px;
+}
+
+.projects .card {
+
+    padding: 16px 12px;
+    border-color: #D8F8FC;
+}
+
+.projects .card svg {
+    width: 68px;
+    height: 66px;
+}
+
 .swiper-button-next:after,
 .swiper-button-prev:after {
     font-size: 20px;
@@ -228,6 +258,26 @@ a {
 }
 
 
+footer .pfooter {
+    font-family: 'Poppins', sans-serif;
+    color: #6c757d;
+    font-size: 16px;
+}
+
+footer h5 {
+    color: #94A3B8;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer ul li a {
+    color: #090914;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
 .footerbottom .list-unstyled li {
     display: flex;
     background: black;
@@ -244,6 +294,11 @@ a {
 
 
 @media screen and (min-width: 992px) {
+
+    .navbar-light {
+        height: 63px;
+    }
+
     .hero h1 {
         font-size: 52px;
     }
@@ -251,17 +306,25 @@ a {
     .navbar-light .navbar-nav .nav-link.active::before {
         width: 75%;
     }
+
+    .navbar-light.fixed-top {
+        top: 49px;
+    }
 }
 
 
 @media screen and (max-width: 767px) {
     .hero h1 {
-        margin-top: 18px;
-        font-size: 34px;
+        margin-top: 38px;
+        font-size: 38px;
     }
 
     .navbar-light .navbar-nav .nav-link.active::before {
-        width: 7%;
+        width: 17%;
+    }
+
+    .navbar-light.fixed-top {
+        top: 123px;
     }
 }
 
@@ -273,6 +336,10 @@ a {
 
     .navbar-light .navbar-nav .nav-link.active::before {
         width: 7%;
+    }
+
+    .navbar-light.fixed-top {
+        top: 49px;
     }
 }
 
