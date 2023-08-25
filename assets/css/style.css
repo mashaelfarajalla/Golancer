@@ -74,6 +74,12 @@ a {
 
 }
 
+.hero .svgbg {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
 .hero .link {
     color: #00235B;
     font-size: 14px;
@@ -186,8 +192,17 @@ a {
 }
 
 
+.accordionsection{
+    margin-top: 135px !important;
+}
+
 .accordionsection .bg {
     padding: 32px 0;
+}
+
+.accordionsection .svgimag{
+    position: absolute;
+        right: 43px;
 }
 
 .accordionsection h4 {
