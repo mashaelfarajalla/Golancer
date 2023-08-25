@@ -341,6 +341,10 @@ footer ul li a {
     .navbar-light.fixed-top {
         top: 49px;
     }
+
+    .projects .card {
+        padding: 16px 25px !important;
+    }
 }
 
 
