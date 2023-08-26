@@ -30,18 +30,15 @@ var swiper = new Swiper(".mySwiper", {
     480: {
       slidesPerView: 1,
       spaceBetween: 0,
-      slidesPerGroup: 1,
     },
     // when window width is >= 640px
     640: {
       slidesPerView: 2,
       spaceBetween: 15,
-      slidesPerGroup: 2,
     },
     991: {
       slidesPerView: 3,
       spaceBetween: 10,
-      slidesPerGroup: 3,
     },
   },
 });
@@ -62,24 +59,20 @@ var swiper = new Swiper(".mySwiper2", {
     320: {
       slidesPerView: 1,
       spaceBetween: 20,
-      slidesPerGroup: 1,
     },
     // when window width is >= 480px
     480: {
       slidesPerView: 1,
       spaceBetween: 15,
-      slidesPerGroup: 1,
     },
     // when window width is >= 640px
     640: {
       slidesPerView: 2,
       spaceBetween: 15,
-      slidesPerGroup: 2,
     },
     991: {
       slidesPerView: 4,
       spaceBetween: 20,
-      slidesPerGroup: 4,
     },
   },
 });
