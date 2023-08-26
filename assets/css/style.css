@@ -592,6 +592,15 @@ footer ul li a {
     .mySwiper3 .swiper-button-next {
         right: 275px !important;
     }
+
+    .arindex .mySwiper3 .swiper-button-next {
+        right: auto;
+        right: 717px !important;
+    }
+
+    .arindex .mySwiper3 .swiper-button-prev {
+        right: 267px !important;
+    }
 }
 
 @media (min-width: 1400px) {
