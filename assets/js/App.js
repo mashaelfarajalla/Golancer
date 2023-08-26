@@ -1,3 +1,5 @@
+AOS.init();
+
 $(document).ready(function () {
   $(window).scroll(function () {
     if ($(window).scrollTop() > 5) {
@@ -8,10 +10,10 @@ $(document).ready(function () {
   });
 });
 
-var swiper = new Swiper(".mySwiper", {
+new Swiper("#servers .mySwiper", {
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: "#servers .swiper-button-next",
+    prevEl: "#servers .swiper-button-prev",
   },
   slidesPerView: 1,
   spaceBetween: 20,
@@ -43,10 +45,10 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-var swiper = new Swiper(".mySwiper2", {
+new Swiper("#Projects .mySwiper2", {
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: "#Projects .swiper-button-next",
+    prevEl: "#Projects .swiper-button-prev",
   },
   slidesPerView: 1,
   spaceBetween: 20,
@@ -77,15 +79,15 @@ var swiper = new Swiper(".mySwiper2", {
   },
 });
 
-var swiper = new Swiper(".mySwiper3", {
+new Swiper("#Testimonials .mySwiper3", {
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
   spaceBetween: 110,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: "#Testimonials .swiper-button-next",
+    prevEl: "#Testimonials .swiper-button-prev",
   },
 
   coverflowEffect: {

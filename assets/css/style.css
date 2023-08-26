@@ -107,6 +107,11 @@ a {
     margin: 0 20px;
 }
 
+.hero .link:hover {
+    color: #021a40;
+    text-decoration: underline;
+}
+
 .hero h1 {
     color: #00235B;
     padding-right: 18px;
@@ -136,6 +141,13 @@ a {
 .servers .pservers {
     font-size: 20px;
     line-height: 23px;
+
+}
+
+/* .projects .card:hover, */
+.servers .card:hover {
+    box-shadow: 1px 2px 3px 2px rgb(210 210 210 / 86%);
+    ;
 
 }
 
@@ -232,6 +244,12 @@ a {
     text-align: end;
 }
 
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: rgb(16 54 115 / 87%) !important;
+}
+
+
 .swiper-button-next:after,
 .swiper-button-prev:after {
     font-size: 20px;
@@ -292,10 +310,15 @@ a {
     background: var(--gray-50, #F9FAFB);
 }
 
-.btn-primary:hover,
+
 .btn-primary,
 .accordionsection .bg .btn-primary {
     background: #00235B;
+    border: 1px solid #00235B;
+}
+
+.btn-primary:hover {
+    background: #0b357ae4;
     border: 1px solid #00235B;
 }
 
@@ -425,6 +448,10 @@ footer ul li a {
     justify-content: center;
 }
 
+.footerbottom .list-unstyled li:hover {
+    background-color: rgb(79, 79, 79);
+}
+
 .footerbottom .list-unstyled li svg path {
     fill: white;
 }
@@ -460,11 +487,11 @@ footer ul li a {
 
 @media screen and (min-width: 992px) {
     .arindex .testimonials .swiper-button-prev {
-        left: 247px !important;
+        left: 270px !important;
     }
 
     .arindex .testimonials .swiper-button-next {
-        right: 214px !important;
+        right: 185px !important;
     }
 
     .mySwiper {
@@ -597,6 +624,10 @@ footer ul li a {
         right: 97px !important;
     }
 
+    .arindex .testimonials .swiper-button-next {
+        right: 75px !important;
+    }
+
     .swiper-button-next:after,
     .swiper-button-prev:after {
         font-size: 12px;
@@ -615,7 +646,7 @@ footer ul li a {
     }
 
     .arindex .testimonials .swiper-button-prev {
-        left: 131px !important;
+        left: 159px !important;
     }
 }
 
@@ -762,11 +793,11 @@ footer ul li a {
 
 
     .arindex .testimonials .swiper-button-next {
-        right: 279px !important;
+        right: 259px !important;
     }
 
     .arindex .testimonials .swiper-button-prev {
-        left: 316px !important;
+        left: 344px !important;
     }
 
     .container,
