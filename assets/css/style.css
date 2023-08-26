@@ -14,6 +14,7 @@ a {
 .colorblue {
     color: rgba(0, 35, 91, 1);
 }
+
 /*////*/
 
 .dropdown-menu {
@@ -415,9 +416,7 @@ footer ul li a {
     fill: white;
 }
 
-.arindex .swiper-button-next {
-    right: auto !important;
-}
+
 
 .arindex .accordion-button::after {
     margin-right: auto;
@@ -434,6 +433,16 @@ footer ul li a {
     text-align: left;
 }
 
+
+.arindex .projects .svgimag3 {
+    text-align: start;
+
+}
+
+.arindex .projects .svggimg {
+    text-align: end;
+    transform: rotate(180deg);
+}
 
 
 @media screen and (min-width: 992px) {
@@ -477,6 +486,20 @@ footer ul li a {
 
     .mySwiper2 {
         width: 53rem;
+    }
+
+    .arindex .swiper-button-next {
+        right: 0px !important;
+    }
+
+
+    .arindex .mySwiper3 .swiper-button-prev {
+        right: 195px;
+        left: 0;
+    }
+
+    .arindex .mySwiper3 .swiper-button-next {
+        right: 646px !important;
     }
 }
 
@@ -525,6 +548,19 @@ footer ul li a {
         right: 91px !important;
     }
 
+    .arindex .mySwiper {
+        width: 91%;
+    }
+
+    .arindex .mySwiper3 .swiper-button-next {
+        right: 534px !important;
+    }
+
+    .arindex .mySwiper3 .swiper-button-prev {
+        right: 80px;
+        left: 0 !important;
+    }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -541,9 +577,6 @@ footer ul li a {
         top: 53px;
     }
 
-    /* .mySwiper2 {
-        padding: 0px 55px !important;
-    } */
 
 
 
@@ -571,6 +604,10 @@ footer ul li a {
 
 
 
+    .arindex .mySwiper {
+        width: 91%;
+    }
+
     .mySwiper {
         width: 85%;
     }
@@ -585,6 +622,22 @@ footer ul li a {
 
     .navigation {
         width: calc(100% - 4%) !important;
+    }
+
+    .arindex .mySwiper2 .swiper-button-prev {
+        left: 4px !important;
+    }
+
+    .arindex .mySwiper2 .swiper-button-next {
+        right: 3px !important;
+    }
+
+    .arindex .mySwiper3 .swiper-button-prev {
+        right: 0px !important;
+    }
+
+    .arindex .mySwiper3 .swiper-button-next {
+        right: 434px !important;
     }
 }
 
@@ -601,6 +654,14 @@ footer ul li a {
     .swiper-button-prev {
         left: 19px !important;
     }
+
+    .arindex .mySwiper {
+        width: 59%;
+    }
+
+    .arindex .mySwiper3 .swiper-button-next {
+        right: 393px !important;
+    }
 }
 
 
@@ -608,6 +669,9 @@ footer ul li a {
 
 
 @media (min-width: 1200px) {
+    .arindex .swiper-button-next {
+        right: auto !important;
+    }
 
     .container,
     .container-lg,
@@ -633,7 +697,7 @@ footer ul li a {
 
     .arindex .mySwiper3 .swiper-button-next {
         right: auto;
-        right: 717px !important;
+        right: 727px !important;
     }
 
     .arindex .mySwiper3 .swiper-button-prev {
