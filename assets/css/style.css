@@ -144,11 +144,42 @@ a {
 
 }
 
-/* .projects .card:hover, */
 .servers .card:hover {
-    box-shadow: 1px 2px 3px 2px rgb(210 210 210 / 86%);
-    ;
+    cursor: pointer;
+}
 
+.servers .card.card3:hover,
+.servers .card.card2:hover,
+.servers .card.card1:hover {
+    background-position: right;
+
+}
+
+.servers .card1 {
+    background: linear-gradient(to right, #fff 50%, #E7FBFE 50%);
+    background-size: 200% 100%;
+    background-position: left;
+    transition: .3s;
+}
+
+.servers .card2 {
+    background: linear-gradient(to right, #fff 50%, #E9EDF3 50%);
+    background-size: 200% 100%;
+    background-position: left;
+    transition: .3s;
+}
+
+.servers .card3 {
+    background: linear-gradient(to right, #fff 50%, #FCFFE7 50%);
+    background-size: 200% 100%;
+    background-position: left;
+    transition: .3s;
+}
+
+.servers .card:hover .card-text,
+.servers .card:hover h5 {
+    /* fill: white; */
+    /* color: white; */
 }
 
 .servers .card {
@@ -661,6 +692,14 @@ footer ul li a {
 
 @media screen and (max-width: 767px) {
 
+    .testimonials .swiper-button-next {
+        left: 40px;
+    }
+
+    .testimonials .navigation {
+        bottom: -245px;
+    }
+
     .projects .svgimag3 {
         right: 20px !important;
     }
@@ -767,12 +806,17 @@ footer ul li a {
     }
 
     .arindex .testimonials .swiper-button-prev {
-        left: 0px !important;
+        right: 35px !important;
     }
 }
 
 
 @media screen and (max-width: 570px) {
+
+    .testimonials .swiper-button-next {
+        left: 66px;
+    }
+
     .mySwiper {
         width: 68%;
     }
@@ -794,7 +838,7 @@ footer ul li a {
     }
 
     .arindex .testimonials .swiper-button-prev {
-        left: 0px !important;
+        right: 56px !important;
     }
 
     .swiper-button-next {
