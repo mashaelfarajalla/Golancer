@@ -16,6 +16,16 @@ a {
 }
 
 
+.dropdown-menu {
+    z-index: 10000;
+    min-width: 5rem;
+}
+
+.navigation {
+    top: 50%;
+    position: absolute;
+    width: calc(100% - 2%);
+}
 
 
 
@@ -169,9 +179,9 @@ a {
     padding: 0 55px;
 } */
 
-.mySwiper2 {
+/* .mySwiper2 {
     padding: 0 100px;
-}
+} */
 
 .testimonials,
 .projects {
@@ -436,6 +446,11 @@ footer ul li a {
 
 @media screen and (min-width: 992px) {
 
+    .mySwiper {
+        width: 52rem;
+        ;
+    }
+
     .accordionsection h4 {
         font-size: 48px;
     }
@@ -467,9 +482,16 @@ footer ul li a {
     .mySwiper3 .swiper-button-next {
         right: 210px !important;
     }
+
+    .mySwiper2 {
+        width: 53rem;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    .mySwiper {
+        width: 37rem;
+    }
 
     .hero h1 {
         font-size: 52px;
@@ -487,9 +509,9 @@ footer ul li a {
         padding: 16px 25px !important;
     }
 
-    .mySwiper2 {
+    /* .mySwiper2 {
         padding: 0px 85px !important;
-    }
+    } */
 
     .accordionsection .imgdiv .img2 {
 
@@ -529,9 +551,9 @@ footer ul li a {
         top: 53px;
     }
 
-    .mySwiper2 {
+    /* .mySwiper2 {
         padding: 0px 55px !important;
-    }
+    } */
 
 
 
@@ -542,7 +564,7 @@ footer ul li a {
     }
 
     .accordionsection h4 {
-        font-size: 44px;
+        font-size: 40px;
     }
 
     .mySwiper3 .swiper-button-prev {
@@ -560,10 +582,42 @@ footer ul li a {
     .projects .svgimag3 {
         /* right:  12px; */
     }
+
+    /* .mySwiper {
+        width: 18rem;
+    } */
+
+    .mySwiper {
+        width: 85%;
+    }
+
+    .swiper-button-next {
+        right: -15px !important;
+    }
+
+    .swiper-button-prev {
+        left: -19px !important;
+    }
+
+    .navigation {
+        width: calc(100% - 4%) !important;
+    }
 }
 
 
+@media screen and (max-width: 570px) {
+    .mySwiper {
+        width: 68%;
+    }
 
+    .swiper-button-next {
+        right: 27px !important;
+    }
+
+    .swiper-button-prev {
+        left: 19px !important;
+    }
+}
 
 
 
@@ -600,6 +654,14 @@ footer ul li a {
 
     .arindex .mySwiper3 .swiper-button-prev {
         right: 267px !important;
+    }
+
+    .mySwiper {
+        width: 60rem;
+    }
+
+    .mySwiper2 {
+        width: 55rem;
     }
 }
 
