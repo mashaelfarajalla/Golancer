@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins&family=Roboto:wght@300;400;500;700&display=swap');
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -103,6 +103,9 @@ a {
     line-height: 38px;
 }
 
+
+.testimonials h3,
+.projects h3,
 .servers h3 {
     font-size: 24px;
     font-weight: 500;
@@ -162,16 +165,21 @@ a {
     opacity: 100% !important;
 }
 
-.mySwiper {
+/* .mySwiper {
     padding: 0 55px;
-}
+} */
 
 .mySwiper2 {
     padding: 0 100px;
 }
 
-.projects .card {
+.testimonials,
+.projects {
+    margin-top: 100px;
+}
 
+.projects .card {
+    height: 173px;
     padding: 16px 12px;
     border-color: #D8F8FC;
 }
@@ -179,6 +187,28 @@ a {
 .projects .card svg {
     width: 68px;
     height: 66px;
+}
+
+.projects .container-fluid {
+    position: relative;
+}
+
+.projects .svgimag {
+    position: absolute;
+}
+
+.projects .svgimag2 {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    text-align: right;
+}
+
+.projects .svgimag3 {
+    right: 0;
+    bottom: -100;
+    z-index: 1;
+    text-align: end;
 }
 
 .swiper-button-next:after,
@@ -192,21 +222,44 @@ a {
 }
 
 
-.accordionsection{
+.accordionsection {
     margin-top: 135px !important;
+}
+
+.accordionsection .imgdiv {
+    position: relative;
+    z-index: 1;
+}
+
+.accordionsection .imgdiv .img3 {
+    position: relative;
+    z-index: 1;
+}
+
+.accordionsection .imgdiv .img1 {
+    position: absolute;
+    left: -27%;
+    top: 0;
+    z-index: 0;
+}
+
+.accordionsection .imgdiv .img2 {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+
 }
 
 .accordionsection .bg {
     padding: 32px 0;
 }
 
-.accordionsection .svgimag{
+.accordionsection .svgimag {
     position: absolute;
-        right: 43px;
+
 }
 
 .accordionsection h4 {
-    font-size: 48px;
     font-style: normal;
     font-weight: 600;
     line-height: 58px;
@@ -272,6 +325,59 @@ a {
     box-shadow: 0px 0 0px 0px;
 }
 
+/* .mySwiper3 {
+    width: 100%;
+    padding: 50px 0;
+
+}*/
+
+.mySwiper3 .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 398px;
+    /* height: 30px; */
+    opacity: 75%;
+    margin-left: 7px;
+    ;
+}
+
+.mySwiper3 .swiper-slide.swiper-slide-active {
+    opacity: 100%;
+}
+
+
+
+.testimonials .card svg path {
+    fill: #FFA033;
+}
+
+.testimonials .card-img-top {
+    width: auto;
+}
+
+.testimonials .card-body-text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #000000;
+}
+
+.testimonials .card-text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.8px;
+    color: #000000;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+    background-image: none
+}
+
+
+
 
 footer .pfooter {
     font-family: 'Poppins', sans-serif;
@@ -307,8 +413,32 @@ footer ul li a {
     fill: white;
 }
 
+.arindex .swiper-button-next {
+    right: auto !important;
+}
+
+.arindex .accordion-button::after {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.arindex footer ul {
+    padding: 0;
+}
+
+.arindex .projects .svgimag2 {
+    left: 0;
+    right: auto;
+    text-align: left;
+}
+
+
 
 @media screen and (min-width: 992px) {
+
+    .accordionsection h4 {
+        font-size: 48px;
+    }
 
     .navbar-light {
         height: 63px;
@@ -325,25 +455,17 @@ footer ul li a {
     .navbar-light.fixed-top {
         top: 49px;
     }
-}
 
-
-@media screen and (max-width: 767px) {
-    .hero h1 {
-        margin-top: 38px;
-        font-size: 38px;
+    .accordionsection .imgdiv .img2 {
+        right: -54%;
     }
 
-    .navbar-light .navbar-nav .nav-link.active::before {
-        width: 17%;
+    .mySwiper3 .swiper-button-prev {
+        left: 216px !important;
     }
 
-    .navbar-light.fixed-top {
-        top: 123px;
-    }
-
-    .mySwiper2 {
-        padding: 0px 55px !important;
+    .mySwiper3 .swiper-button-next {
+        right: 210px !important;
     }
 }
 
@@ -368,9 +490,109 @@ footer ul li a {
     .mySwiper2 {
         padding: 0px 85px !important;
     }
+
+    .accordionsection .imgdiv .img2 {
+
+        right: -3% !important;
+
+    }
+
+    .accordionsection .imgdiv .img1 {
+        left: -7%;
+    }
+
+    .accordionsection h4 {
+        font-size: 45px;
+    }
+
+    .mySwiper3 .swiper-button-prev {
+        left: 97px !important;
+    }
+
+    .mySwiper3 .swiper-button-next {
+        right: 91px !important;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .hero h1 {
+        margin-top: 38px;
+        font-size: 38px;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active::before {
+        width: 17%;
+    }
+
+    .navbar-light.fixed-top {
+        top: 53px;
+    }
+
+    .mySwiper2 {
+        padding: 0px 55px !important;
+    }
+
+
+
+    .accordionsection .imgdiv .img2 {
+
+        right: -31px !important;
+
+    }
+
+    .accordionsection h4 {
+        font-size: 44px;
+    }
+
+    .mySwiper3 .swiper-button-prev {
+        left: 0px !important;
+    }
+
+    .mySwiper3 .swiper-button-next {
+        right: 0px !important;
+    }
+
+    .projects .svgimag2 {
+        right: 25px !important;
+    }
+
+    .projects .svgimag3 {
+        /* right:  12px; */
+    }
 }
 
 
+
+
+
+
+
+
+@media (min-width: 1200px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1105px;
+    }
+
+    .accordionsection .imgdiv .img2 {
+
+        right: -37%;
+
+    }
+
+    .mySwiper3 .swiper-button-prev {
+        left: 285px !important;
+    }
+
+    .mySwiper3 .swiper-button-next {
+        right: 275px !important;
+    }
+}
 
 @media (min-width: 1400px) {
 
@@ -381,15 +603,12 @@ footer ul li a {
     .container-xl {
         max-width: 1320px !important;
     }
-}
 
-@media (min-width: 1200px) {
+    .mySwiper3 .swiper-button-prev {
+        left: 394px !important;
+    }
 
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container-xl {
-        max-width: 1105px;
+    .mySwiper3 .swiper-button-next {
+        right: 383px !important;
     }
 }
